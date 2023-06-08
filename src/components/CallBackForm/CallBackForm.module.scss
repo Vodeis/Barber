@@ -1,0 +1,42 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.form {
+  &__container {
+    background: transparent; 
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 70%;
+
+  &__inputsContainer {
+    position: relative;
+  }
+  input {
+    color: $color-black;
+    font-size: $fs-main;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    background: transparent;
+    width: 100%;
+  }
+
+  button {
+    background: $color-blue;
+    border: none;
+    color: $color-white;
+    font-size: $fs-main;
+    text-align: center;
+    padding: 1em 0;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FF0000;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.contactUs {
+  &__bg {
+    background: #fff;
+    padding: 5em 0; //change on image
+  }
+  &__container {
+    @include container;
+    color: $color-black;
+  }
+  &__title {
+    font-size: $fs-title-large;
+  }
+  &__description {
+    font-size: $fs-main;
+    width: 75%;
+    margin: 1.5em 0;
+  }
+}
