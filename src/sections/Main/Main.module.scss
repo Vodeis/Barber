@@ -1,0 +1,23 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.main_section {
+  &__title {
+    font-size: $fs-title;
+    color: $color-white;
+    &__bg {
+      padding: 2em 0;
+      background: $color-blue;
+    }
+    &__container {
+      @include container;
+    }
+  }
+  &__img {
+    @include img;
+    &__container {
+      @include container;
+      height: 400px; // delete after image
+    }
+  }
+}

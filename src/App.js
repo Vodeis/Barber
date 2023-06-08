@@ -1,7 +1,13 @@
-
+import Main from "./sections/Main/Main";
+import AboutUs from "./sections/AboutUs/AboutUs";
 
 function App() {
-  return <div>Hallo</div>;
+  return (
+    <>
+      <Main />
+      <AboutUs/>
+    </>
+  );
 }
 
 export default App;

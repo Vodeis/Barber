@@ -1,0 +1,103 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.about {
+  &__container {
+    @include container;
+  }
+  // background: linear-gradient(
+  //     90deg,
+  //     rgba(0, 0, 0, 0.5) 0%,
+  //     rgba(0, 0, 0, 0.6) 65%,
+  //     rgba(0, 0, 0, 1) 100%
+  //   ),
+  //   url(../../img/aboutUs/about-us-bg.jpg) center center/contain no-repeat;
+  // background-attachment: fixed;
+
+  color: $color-white;
+
+  h5 {
+    font-size: $fs-title-large;
+    opacity: 0.4;
+    margin-bottom: 1em;
+  }
+
+  &__top {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.6) 65%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url(../../img/aboutUs/about-us-bg.jpg) center center/contain no-repeat;
+    background-attachment: fixed;
+
+    ul {
+      list-style: none;
+      li {
+        font-size: $fs-subtitle;
+      }
+      li:not(li:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  &__offering {
+    padding-top: 2em;
+    &__container {
+      list-style: none;
+    }
+    &__offer {
+      position: relative;
+      &:hover .about__offering__dark_bg {
+        opacity: 0.6;
+      }
+    }
+    &__offer:not(li:last-child) {
+      margin-bottom: 2em;
+    }
+    img {
+      @include img;
+      max-height: 25em;
+      width: 100%;
+    }
+    &__title {
+      font-size: $fs-title;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+      font-size: $fs-main;
+      width: 80%;
+      &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 0.5em;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+    &__dark_bg {
+      background: #1a1919;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      transition: 0.5s ease-in;
+    }
+  }
+}
