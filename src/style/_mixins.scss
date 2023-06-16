@@ -1,7 +1,9 @@
+@import "./variables";
+
 @mixin container {
   margin: 0 auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
   max-width: 140em;
 }
 
@@ -9,4 +11,10 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@mixin title {
+  font-size: $fs-title-large;
+  opacity: 0.4;
+  color: $color-white;
 }

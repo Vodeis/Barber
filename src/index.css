@@ -1,7 +1,0 @@
-@import './style/_reset.scss';
-
-body {
-  background: #000;
-  min-width: 32em;
-}
-

@@ -1,0 +1,58 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.learning {
+  color: $color-white;
+  // place bg image
+
+  &__container {
+    @include container;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: .5em;
+  }
+
+  &__description {
+    font-size: $fs-title;
+  }
+
+  &__itemsContainer {
+    margin-top: 5em;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      height: 15em;
+      background-color: #fff;
+      width: 100%;
+    }
+
+    &__textContainer {
+      background: url(../../img/offers-grey-bg.png);
+      height: 15em;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__text {
+      font-size: $fs-main;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1.5em;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 3.5em;
+  }
+}

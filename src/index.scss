@@ -1,0 +1,12 @@
+@import "./style/_reset.scss";
+@import "./style/_variables.scss";
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #000;
+  min-width: 32em;
+}
