@@ -18,6 +18,7 @@
     &__container {
       @include container;
       height: 400px; // delete after image
+      background-color: #fff; // delete after image
     }
   }
 }

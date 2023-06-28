@@ -28,7 +28,7 @@ function AboutUs() {
     },
   ];
   return (
-    <section className={style.about}>
+    <section className={style.about} id="aboutUs">
       <div className={style.about__container}>
         <div className={style.about__top}>
           <h5>Про нас: </h5>
@@ -43,7 +43,7 @@ function AboutUs() {
             <li>Ми постійно розвиваємось самі і готові ділити.</li>
           </ul>
         </div>
-        <div className={style.about__offering}>
+        <div className={style.about__offering} id="offering">
           <h5>Що ми пропонуємо:</h5>
           <ul className={style.about__offering__container}>
             {offers.map((offer, i) => (

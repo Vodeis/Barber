@@ -5,6 +5,7 @@ function Main() {
   return (
     <section className={style.main_section}>
       <div className={style.main_section__img__container}>
+      Main_photo
         {/* <img className={style.main_section__img}></img> */}
       </div>
       <div className={style.main_section__title__bg}>

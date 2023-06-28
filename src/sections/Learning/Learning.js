@@ -7,7 +7,7 @@ function Learning() {
     { img: "", text: "Використовуємо тільки якісну та професійну косметику" },
   ];
   return (
-    <section className={styles.learning}>
+    <section className={styles.learning} id='learning'>
     <div className={styles.learning__container}>
       <h1 className={styles.learning__title}>Як проходить навчання?</h1>
       <p className={styles.learning__description}>
