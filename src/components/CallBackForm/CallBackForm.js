@@ -1,4 +1,4 @@
-import * as Yup from "yup";
+// import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Button from "../Button/Button";
 import styles from "./CallBackForm.module.scss";
@@ -24,7 +24,7 @@ function CallBackForm() {
       >
         {({ isSubmitting }) => (
           <Form className={styles.form}>
-            <div className={styles.form__inputsContainer}>
+            <div className={styles.form__input}>
               <Field
                 placeholder="Введіть ваше ім'я"
                 type="name"
@@ -33,7 +33,7 @@ function CallBackForm() {
               />
               <ErrorMessage name="name" component="span" />
             </div>
-            <div className={styles.form__inputsContainer}>
+            <div className={styles.form__input}>
               <Field
                 placeholder="Введіть ваш телефон"
                 type="text"

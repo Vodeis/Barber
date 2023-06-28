@@ -5,19 +5,19 @@ function Header() {
   return (
     <>
       <div className={styles.header}>
-        <input
-          // checked={burgerShow}
-          // onChange={() => setBurgerShow(!burgerShow)}
-          className={styles.checkbox}
-          type="checkbox"
-        />
-        <div className={styles.hamburgerLines}>
-          <span className={classNames(styles.line, styles.line1)}></span>
-          <span className={classNames(styles.line, styles.line2)}></span>
-          <span className={classNames(styles.line, styles.line3)}></span>
-        </div>
+          <input
+            // checked={burgerShow}
+            // onChange={() => setBurgerShow(!burgerShow)}
+            className={styles.checkbox}
+            type="checkbox"
+          />
+          <div className={styles.hamburgerLines}>
+            <span className={classNames(styles.line, styles.line1)}></span>
+            <span className={classNames(styles.line, styles.line2)}></span>
+            <span className={classNames(styles.line, styles.line3)}></span>
+          </div>
 
-        <div className={styles.header__logo}>Logo</div>
+          <div className={styles.header__logo}>Logo</div>
         <nav className={styles.header_nav}>
           <ul className={styles.header_list}>
             <li className={styles.header_list_item}>

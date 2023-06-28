@@ -1,0 +1,78 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.offering {
+  padding-top: 2em;
+  color: $color-white;
+
+  h5 {
+    @include title;
+    margin-bottom: 1em;
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__items {
+    list-style: none;
+    @media screen and (min-width: $bp-medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4em;
+    }
+  }
+  &__offer {
+    position: relative;
+    &:hover .about__offering__dark_bg {
+      opacity: 0.6;
+    }
+  }
+  &__offer:not(li:last-child) {
+    margin-bottom: 2em;
+    @media screen and (min-width: $bp-medium) {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    @include img;
+    height: 25em;
+    width: 100%;
+  }
+  &__title {
+    font-size: $fs-title;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    font-size: $fs-main;
+    width: 80%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0 0.5em;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  &__dark_bg {
+    background: #1a1919;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s ease-in;
+  }
+}
