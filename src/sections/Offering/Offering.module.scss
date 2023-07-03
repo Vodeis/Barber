@@ -24,6 +24,9 @@
   }
   &__offer {
     position: relative;
+    height: 25em;
+    width: 100%;
+    overflow: hidden;
     &:hover .about__offering__dark_bg {
       opacity: 0.6;
     }
@@ -36,8 +39,7 @@
   }
   img {
     @include img;
-    height: 25em;
-    width: 100%;
+    object-fit: cover;
   }
   &__title {
     font-size: $fs-title;

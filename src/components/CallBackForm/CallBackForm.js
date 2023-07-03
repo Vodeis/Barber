@@ -4,6 +4,19 @@ import Button from "../Button/Button";
 import styles from "./CallBackForm.module.scss";
 
 function CallBackForm() {
+  const SendForm = async (data) => {
+    const response = await fetch("sendmail.php", {
+      method: "POST",
+      body: data,
+    });
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message)
+    } else {
+      alert('Error')
+    }
+  };
+
   return (
     <div className={styles.form__container}>
       <Formik
@@ -16,8 +29,12 @@ function CallBackForm() {
           return errors;
         }}
         onSubmit={(values, { setSubmitting }) => {
+          const formData = new FormData();
+          formData.append("name", values.name);
+          formData.append("phone", values.phone);
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
+            SendForm(formData);
             setSubmitting(false);
           }, 400);
         }}
