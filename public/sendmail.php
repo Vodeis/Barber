@@ -5,19 +5,17 @@
   require './PHPMailer/src/Exception.php';
   require './PHPMailer/src/PHPMailer.php';
 
-
   $mail = new PHPMailer(true);
   $mail->CharSet = 'UTF-8';
   $mail->setLanguage('ru', 'phpmailer/language');
   $mail->isHTML(true);
 
-
-  $mail->setFrom('Kodbaza@gmail.com', 'Mailer'); // from
+  $mail->setFrom('kodbazac@kodbaza.com', 'kodbaza'); // from
   $mail->addAddress('Kodbaza@gmail.com'); //to
-  $mail->Subject = 'Here is the subject'; // theme of letter
+  $mail->Subject = 'Заявка с форми'; // subject of letter
 
   // leters body
-  $body = '<h1>title</h1>';
+  $body = '<h1>Тайтл</h1>';
   $body .= '<p><b>Name:</b> '.$_POST['name'].'</p>';
   $body .= '<p><b>Phone:</b> '.$_POST['phone'].'</p>';
 

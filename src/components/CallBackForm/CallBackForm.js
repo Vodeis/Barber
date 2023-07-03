@@ -33,8 +33,10 @@ function CallBackForm() {
           formData.append("name", values.name);
           formData.append("phone", values.phone);
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            // alert(JSON.stringify(values, null, 2));
             SendForm(formData);
+            values.name = '';
+            values.phone = '';
             setSubmitting(false);
           }, 400);
         }}
