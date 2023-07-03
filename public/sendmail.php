@@ -12,7 +12,7 @@
 
   $mail->setFrom('kodbazac@kodbaza.com', 'kodbaza'); // from
   $mail->addAddress('Kodbaza@gmail.com'); //to
-  $mail->Subject = 'Заявка с форми'; // subject of letter
+  $mail->Subject = 'Заявка з форми'; // subject of letter
 
   // leters body
   $body = '<h1>Тайтл</h1>';

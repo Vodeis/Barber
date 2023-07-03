@@ -21,6 +21,10 @@
     margin-bottom: 1em;
   }
 
+  p {
+    font-size: $fs-subtitle;
+  }
+
   &__top {
     padding-top: 3em;
     padding-bottom: 3em;

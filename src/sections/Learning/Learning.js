@@ -1,32 +1,17 @@
 import styles from "./Learning.module.scss";
-import img1 from "../../img/learning/IMG_0276.webp";
-
+import { text } from "../../text/text";
 function Learning() {
-  const content = [
-    {
-      img: img1,
-      text: "Моделі для відпрацювання та болванки надаємо на період навчання ",
-    },
-    {
-      img: img1,
-      text: "Навчання в атмосферній та сучасній аудиторії, з наявною фотозоною ",
-    },
-    { img: img1, text: "Використовуємо тільки якісну та професійну косметику" },
-  ];
+  const content = text.learning;
   return (
     <section className={styles.learning} id="learning">
       <div className={styles.learning__container}>
-        <h1 className={styles.learning__title}>Як проходить навчання?</h1>
-        <p className={styles.learning__description}>
-          Ми забезпечуємо вас усім необхідним, все що потрібно, мати при собі
-          гарний настрій.
-        </p>
+        <h1 className={styles.learning__title}>{content.title}</h1>
         <ul className={styles.learning__itemsContainer}>
-          {content.map((item) => (
+          {content.items.map((item) => (
             <li className={styles.learning__item}>
               <img
                 className={styles.learning__item__img}
-                src={item.img}
+                src={require(`../../img/learning/${item.img}`)}
                 alt="content-pht"
               />
               <div className={styles.learning__item__textContainer}>
