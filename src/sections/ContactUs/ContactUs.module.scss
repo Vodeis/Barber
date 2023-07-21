@@ -5,6 +5,8 @@
   &__bg {
     background: #fff;
     padding: 5em 0; //change on image
+    scroll-margin-top: 12em;
+
   }
   &__container {
     @include container;
@@ -17,5 +19,6 @@
     font-size: $fs-main;
     width: 75%;
     margin: 1.5em 0;
+    line-height: 1.5em;
   }
 }

@@ -4,6 +4,7 @@
 .learning {
   color: $color-white;
   // place bg image
+  scroll-margin-top: 12em;
 
   &__container {
     @include container;

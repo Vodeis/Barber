@@ -2,6 +2,9 @@
 @import "../../style/variables";
 
 .main_section {
+  margin-top: 12em;
+  scroll-margin-top: 12em;
+
   &__title {
     font-size: $fs-title;
     color: $color-white;

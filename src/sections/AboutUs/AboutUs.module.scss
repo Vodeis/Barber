@@ -2,6 +2,8 @@
 @import "../../style/variables";
 
 .about {
+  scroll-margin-top: 12em;
+
   &__container {
     @include container;
   }

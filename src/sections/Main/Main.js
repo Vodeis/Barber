@@ -3,7 +3,7 @@ import style from "./Main.module.scss";
 
 function Main() {
   return (
-    <section className={style.main_section}>
+    <section className={style.main_section} id="main">
       <div className={style.main_section__img__container}>
       Main_photo
         {/* <img className={style.main_section__img}></img> */}

@@ -6,6 +6,8 @@
   padding-bottom: 2em;
   color: $color-white;
 
+  scroll-margin-top: 12em;
+
   h5 {
     @include title;
     margin-bottom: 1em;
@@ -25,7 +27,7 @@
   }
   &__offer {
     position: relative;
-    height: 25em;
+    height: 28em;
     width: 100%;
     overflow: hidden;
     &:hover .about__offering__dark_bg {
@@ -51,7 +53,7 @@
     text-align: center;
     font-size: $fs-main;
     width: 80%;
-    line-height: 1.1em;
+    line-height: 1.2em;
     &__container {
       display: flex;
       flex-direction: column;
