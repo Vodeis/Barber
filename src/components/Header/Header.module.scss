@@ -67,15 +67,15 @@
   &__contacts {
     color: $color-white;
     position: absolute;
-    top: 3em;
+    top: 3.5em;
     left: 50%;
     transform: translateX(-50%);
 
     // @media only screen and (max-width: 430px) {
     //   top: 3.2em;
     // }
-    @media only screen and (max-width: 360px) {
-      top: 2.7em;
+    @media only screen and (max-width: 340px) {
+      left: 52%;
     }
     // @media only screen and (min-width: $bp-large) {
     //   display: none;
@@ -96,7 +96,7 @@
     }
     a {
       display: block;
-      margin-bottom: 1.4em;
+      margin-bottom: 1.8em;
       color: $color-white;
       text-decoration: none;
 
@@ -183,7 +183,7 @@
     height: 38px;
     width: 50px;
     position: absolute;
-    top: 3.5rem;
+    top: 4rem;
     right: 3rem;
     z-index: 5;
     display: flex;
