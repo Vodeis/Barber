@@ -1,4 +1,17 @@
 export const text = {
+  header: {
+    adress: "Житомир, Бориса Тена 125",
+    number: "+38 (000) 00 00",
+    numHref: "+380000000",
+    adressLink: "https://goo.gl/maps/1F48y7DKycnkt4aE7",
+    menu: [
+      { href: "#aboutUs", text: "Про нас" },
+      { href: "#offering", text: "Що ми пропонуємо" },
+      { href: "#contactUs", text: "Contact us" },
+      { href: "#learning", text: "Як проходить навчання" },
+      { href: "#masters", text: "Наші майстри" },
+    ],
+  },
   aboutUs: {
     title: "Про нас:",
     content:
@@ -47,6 +60,42 @@ export const text = {
       {
         img: "4.webp",
         text: "Використовуємо тільки якісну та професійну косметику",
+      },
+    ],
+  },
+  contactUs: {
+    title: "Contact us",
+    text: "Заповніть форму та дізнайтесь про курс , який вас цікавить, детальніше.",
+    name: "Введіть ваше ім'я",
+    phone: "Введіть ваш телефон",
+    submit: "Записатися на урок",
+  },
+  masters: {
+    title: "Наші майстри",
+    masters: [
+      {
+        img: "1.webp",
+        text: "",
+      },
+      {
+        img: "2.webp",
+        text: "",
+      },
+      {
+        img: "3.webp",
+        text: "",
+      },
+      {
+        img: "4.webp",
+        text: "",
+      },
+      {
+        img: "5.webp",
+        text: "",
+      },
+      {
+        img: "6.webp",
+        text: "",
       },
     ],
   },

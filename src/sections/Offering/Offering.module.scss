@@ -3,6 +3,7 @@
 
 .offering {
   padding-top: 2em;
+  padding-bottom: 2em;
   color: $color-white;
 
   h5 {
@@ -50,6 +51,7 @@
     text-align: center;
     font-size: $fs-main;
     width: 80%;
+    line-height: 1.1em;
     &__container {
       display: flex;
       flex-direction: column;

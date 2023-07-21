@@ -2,8 +2,11 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Button from "../Button/Button";
 import styles from "./CallBackForm.module.scss";
+import {text} from '../../text/text';
 
 function CallBackForm() {
+  const content = text.contactUs;
+
   const SendForm = async (data) => {
     const response = await fetch("sendmail.php", {
       method: "POST",
@@ -45,7 +48,7 @@ function CallBackForm() {
           <Form className={styles.form}>
             <div className={styles.form__input}>
               <Field
-                placeholder="Введіть ваше ім'я"
+                placeholder={content.name}
                 type="name"
                 name="name"
                 required
@@ -54,7 +57,7 @@ function CallBackForm() {
             </div>
             <div className={styles.form__input}>
               <Field
-                placeholder="Введіть ваш телефон"
+                placeholder={content.phone}
                 type="text"
                 name="phone"
                 required
@@ -63,7 +66,7 @@ function CallBackForm() {
             </div>
 
             <Button
-              text="Записатися на урок"
+              text={content.submit}
               type="submit"
               disabled={isSubmitting}
             />

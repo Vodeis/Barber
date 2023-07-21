@@ -1,0 +1,39 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.masters {
+  color: $color-white;
+  // place bg image
+
+  &__container {
+    @include container;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 0.5em;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    row-gap: 2em;
+
+    @media only screen and (min-width: $bp-small) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2em;
+    }
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+      &__img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+}
