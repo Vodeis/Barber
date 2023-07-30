@@ -11,7 +11,7 @@
     line-height: 1.5em;
     &__bg {
       padding: 2em 0;
-      background: $color-blue;
+      background: rgba(55,74,96, 0.5)
     }
     &__container {
       @include container;
@@ -19,5 +19,6 @@
   }
   &__img {
     @include img;
+    margin: 0 auto;
   }
 }
