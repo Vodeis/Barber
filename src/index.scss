@@ -4,9 +4,17 @@
 html,
 body {
   font-family: "Inter", sans-serif;
+  min-width: 320px;
 }
 
 body {
   background: #000;
-  min-width: 32em;
 }
+
+// for insta video
+iframe {
+  min-width: 26em !important;
+  margin: 0 auto !important;
+}
+
+// for insta video

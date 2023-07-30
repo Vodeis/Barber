@@ -1,11 +1,15 @@
 import styles from "./Learning.module.scss";
 import { text } from "../../text/text";
+import InstagramEmbed from "../../components/Video/InstagramEmbed";
 function Learning() {
   const content = text.learning;
   return (
     <section className={styles.learning} id="learning">
       <div className={styles.learning__container}>
         <h1 className={styles.learning__title}>{content.title}</h1>
+        <div className={styles.video__wrapper}>
+          <InstagramEmbed />
+        </div>
         <ul className={styles.learning__itemsContainer}>
           {content.items.map((item) => (
             <li className={styles.learning__item}>

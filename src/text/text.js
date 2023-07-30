@@ -10,8 +10,11 @@ export const text = {
       { href: "#offering", text: "Що ми пропонуємо" },
       { href: "#contactUs", text: "Contact us" },
       { href: "#learning", text: "Як проходить навчання" },
-      { href: "#masters", text: "Наші майстри" },
+      { href: "#masters", text: "Наші викладачі" },
     ],
+  },
+  main: {
+    title: "Ми допоможемо тобі поринути в мистецтво барберінгу",
   },
   aboutUs: {
     title: "Про нас:",
@@ -72,7 +75,7 @@ export const text = {
     submit: "Записатися на урок",
   },
   masters: {
-    title: "Наші майстри",
+    title: "Наші викладачі",
     masters: [
       {
         img: "1.webp",
