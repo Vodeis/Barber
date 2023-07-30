@@ -8,7 +8,7 @@ export const text = {
     menu: [
       { href: "#aboutUs", text: "Про нас" },
       { href: "#offering", text: "Що ми пропонуємо" },
-      { href: "#contactUs", text: "Contact us" },
+      { href: "#contactUs", text: "Залишити заявку" },
       { href: "#learning", text: "Як проходить навчання" },
       { href: "#masters", text: "Наші викладачі" },
     ],
@@ -68,7 +68,7 @@ export const text = {
     ],
   },
   contactUs: {
-    title: "Contact us",
+    title: "Залишити заявку",
     text: "Заповніть форму та дізнайтесь про курс , який вас цікавить, детальніше.",
     name: "Введіть ваше ім'я",
     phone: "Введіть ваш телефон",
