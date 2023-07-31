@@ -11,8 +11,8 @@ function Learning() {
           <InstagramEmbed />
         </div>
         <ul className={styles.learning__itemsContainer}>
-          {content.items.map((item) => (
-            <li className={styles.learning__item}>
+          {content.items.map((item, i) => (
+            <li className={styles.learning__item} key={i}>
               <img
                 className={styles.learning__item__img}
                 src={require(`../../img/learning/${item.img}`)}

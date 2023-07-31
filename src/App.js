@@ -5,6 +5,7 @@ import ContactUs from "./sections/ContactUs/ContactUs";
 import Learning from "./sections/Learning/Learning";
 import Offering from "./sections/Offering/Offering";
 import Masters from "./sections/Masters/Masters";
+import Footer from "./components/Footer/Footer"
 
 import { useEffect } from "react";
 
@@ -37,6 +38,7 @@ function App() {
       <ContactUs />
       <Learning />
       <Masters />
+      <Footer/>
     </>
   );
 }
