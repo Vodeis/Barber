@@ -1,0 +1,6 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.footer {
+  @include container;
+}
