@@ -2,8 +2,8 @@ export const text = {
   header: {
     logo: ["код", "база"],
     adress: "Житомир, Бориса Тена 125",
-    number: "+38 097 098 81 24",
-    numHref: "+380970988124",
+    number: "+380 93 120 36 64",
+    numHref: "+380931203664",
     adressLink: "https://goo.gl/maps/1F48y7DKycnkt4aE7",
     menu: [
       { href: "#aboutUs", text: "Про нас" },

@@ -15,7 +15,7 @@
   $mail->Subject = 'Заявка з форми'; // subject of letter
 
   // leters body
-  $body = '<h1>Тайтл</h1>';
+  $body = '<h2>Заявка з форми</h2>';
   $body .= '<p><b>Name:</b> '.$_POST['name'].'</p>';
   $body .= '<p><b>Phone:</b> '.$_POST['phone'].'</p>';
 
